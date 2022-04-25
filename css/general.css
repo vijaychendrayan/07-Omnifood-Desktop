@@ -19,7 +19,7 @@ Primary : #e67e22
 Tints : #fdf2e9
 Shades :
 Accents:
-Greys: #555  #333
+Greys: #555  #333 #6f6f6f
 
 ----03: Image Source
 unsplash.com 
@@ -158,6 +158,26 @@ body {
   border-bottom: 1px solid transparent;
 }
 
+/* List */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -168,6 +188,15 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2--cols {
@@ -175,6 +204,10 @@ body {
 }
 .grid--3--cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--center-v {
