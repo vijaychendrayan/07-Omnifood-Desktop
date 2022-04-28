@@ -112,6 +112,7 @@
   /* Mobile Navigation */
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
 
   .main-nav {
@@ -127,10 +128,8 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease-in;
-
     /* Hide navigation */
     /* display: none; */
-
     /* 1. hide it visually */
     opacity: 0;
     /* 2, Make it unaccessible to mouse and keyboard */
@@ -139,8 +138,7 @@
     visibility: none;
   }
 
-  .nav-open,
-  .main-nav {
+  .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;

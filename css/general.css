@@ -47,6 +47,7 @@ html {
      10px = 1 rem */
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
